@@ -19,7 +19,7 @@ namespace Ecto_TecBE.Controllers
         // POST: Emailcontroller/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(string email, string nombre, string ciudad, string fecha)
+        public IActionResult Create(string email, string nombre, string ciudad, string fecha)
         {
             MailRequest mail = new MailRequest();
             mail.Email = email;
